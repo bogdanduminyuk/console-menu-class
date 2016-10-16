@@ -13,7 +13,7 @@ Functions return error message if error happend or empty string if all is ok.
 Ñlass uses exception-mechanism. Control them using try-catch. If program got an exception, it does abort.
 
 # small example
-```
+```C++11
 string fun1()
 {
 	// do stuff
