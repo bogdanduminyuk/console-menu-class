@@ -10,9 +10,10 @@ Handler functions must be written outside a class like a single function. They h
 
 # what functions return
 Functions return error message if error happend or empty string if all is ok.
-Сlass uses exception-mechanism. Control them using try-catch. If program got an exception, it does abort.
+Г‘lass uses exception-mechanism. Control them using try-catch. If program got an exception, it does abort.
 
 # small example
+```
 string fun1()
 {
 	// do stuff
@@ -26,6 +27,7 @@ string fun2()
 // menu initialize
 Menu menu();
 menu.run(
-			{ "first", "second" }, //вектор меню
-			{ fun1, fun2 }         //вектор функций
-		);
+	{ "first", "second" }, //vector of names
+	{ fun1, fun2 }         //vector of handlers
+);
+```
